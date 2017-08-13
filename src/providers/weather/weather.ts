@@ -7,11 +7,13 @@ import 'rxjs/add/operator/map';
 export class WeatherProvider {
 
   apiKey = '1ff6a3ec70686638';
- url;
+  url;
 
   constructor(public http: Http) {
-    console.log('Hello WeatherProvider Provider');
+    //console.log('Hello WeatherProvider Provider');
     this.url='http://api.wunderground.com/api/1ff6a3ec70686638/conditions/q';
+
+
   }
 
 getWeather(city,state){
